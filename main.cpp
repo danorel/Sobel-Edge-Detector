@@ -6,7 +6,7 @@
 
 int main(){
     std::string pathToImage = "/Users/danorel/Workspace/World of C/C++/KMA/MMPI/Sobel-Operator/";
-    std::string image = "image.jpg";
+    std::string image = "image1.jpg";
     std::string ImageLabel = "Original Image";
     std::string ProcessedImageLabel = "Processed Image";
 
