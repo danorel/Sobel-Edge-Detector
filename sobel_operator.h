@@ -11,7 +11,16 @@
 using namespace cv;
 #ifndef SOBEL_OPERATOR_HANDS_METHODS_H
 #define SOBEL_OPERATOR_HANDS_METHODS_H
-Mat SobelOperator(const Mat&);
-double **Gx();
-double **Gy();
+class SobelOperator{
+public:
+    SobelOperator(const Mat&);
+    Mat process();
+    ~SobelOperator();
+private:
+    double **Gx();
+    double **Gy();
+
+private:
+    Mat Image;
+};
 #endif //SOBEL_OPERATOR_HANDS_METHODS_H

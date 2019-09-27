@@ -2,7 +2,7 @@
 // Created by Dan Orel on 2019-09-27.
 //
 #include <iostream>
-#include "hands_methods.h"
+#include "sobel_operator.h"
 
 int main(){
     std::string pathToImage = "/Users/danorel/Workspace/World of C/C++/KMA/MMPI/Sobel-Operator/";
@@ -11,7 +11,9 @@ int main(){
     std::string ProcessedImageLabel = "Processed Image";
 
     Mat Image = imread(pathToImage + image, IMREAD_GRAYSCALE);
-    Mat ProcessedImage = SobelOperator(Image);
+
+    SobelOperator sobel = SobelOperator(Image);
+    Mat ProcessedImage = sobel.process();
 
     imshow(ImageLabel, Image);
     imshow(ProcessedImageLabel, ProcessedImage);

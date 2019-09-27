@@ -8,7 +8,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(
         Sobel-Operator main.cpp
-        hands_methods.cpp
+        sobel_operator.cpp
 )
 
 # linking
